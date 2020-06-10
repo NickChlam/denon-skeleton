@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+        - .\:/app/
+    container_name: deno-deploy
+    ports:
+      - "8000:8000"
